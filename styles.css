@@ -1,0 +1,353 @@
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}  
+
+header {  
+    background-color: #004d00;  
+    color: white;  
+    padding: 15px;  
+    text-align: center;  
+}  
+
+nav ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav ul li a {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+.banner {  
+    background-color: #e8f5e9;  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+.banner h2 {  
+    margin: 0;  
+}  
+
+.news {  
+    padding: 20px;  
+    max-width: 800px;  
+    margin: auto;  
+}  
+
+article {  
+    background: white;  
+    padding: 15px;  
+    margin-bottom: 15px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+h3 {  
+    margin-top: 0;  
+}  
+
+footer {  
+    text-align: center;  
+    background: #005500;  
+    color: white;  
+    padding: 10px 0;  
+}
+.news {  
+    margin: 20px;  
+    font-family: Arial, sans-serif; /* Шрифт для контента */  
+    display: flex; /* Используем флекс для размещения элементов */  
+    flex-direction: column; /* Устанавливаем вертикальное направление для заголовка и контента */  
+}  
+
+.news h2 {  
+    text-align: center; /* Центрирование заголовка */  
+    margin-bottom: 20px; /* Отступ ниже заголовка */  
+}  
+
+.news-main {  
+    display: flex; /* Используем флекс для перемещения элементов рядом */  
+    flex: 1; /* Занимает все доступное пространство */  
+}  
+
+.news-featured {  
+    flex: 3; /* Занимает большую часть пространства */  
+    position: relative; /* Для позиционирования */  
+    margin-right: 20px; /* Отступ справа от основного контента */  
+}  
+
+.news-featured img {  
+    width: 100%; /* Полная ширина блока */  
+    border-radius: 8px; /* Закругленные углы картинки */  
+    height: auto; /* Автоматическая высота для сохранения пропорций */  
+}  
+
+.news-info {  
+    background-color: #006600; /* Цвет фона для информации о новости */  
+    color: white; /* Цвет текста */  
+    padding: 10px; /* Отступы внутри блока */  
+    border-radius: 0 0 8px 8px; /* Закругление углов снизу */  
+    position: absolute; /* Абсолютное позиционирование */  
+    bottom: 0; /* Прижатие к нижнему краю блока */  
+    left: 0;  
+    right: 0;  
+}  
+
+.news-list {  
+    flex: 2; /* Занимает меньше пространства */  
+    background-color: #f0f0f0; /* Светлый фон для списка новостей */  
+    padding: 15px; /* Отступы внутри блока */  
+    border-radius: 8px; /* Закругленные углы списка */  
+    display: flex; /* Flexbox для вертикального размещения */  
+    flex-direction: column; /* Вертикальное направление элементов списка */  
+}  
+
+.news-item {  
+    margin-bottom: 10px; /* Отступ между элементами списка */  
+}  
+
+.news-item a {  
+    color: #006600; /* Цвет текста ссылок */  
+    text-decoration: none; /* Убираем подчеркивание */  
+}  
+
+.news-item a:hover {  
+    text-decoration: underline; /* Подчеркивание при наведении */  
+}  
+
+.see-more {  
+    display: block; /* Показать как блок для большего пространства */  
+    text-align: center; /* Центрирование ссылки */  
+    margin-top: 20px; /* Отступ сверху */  
+    color: #006600; /* Цвет текста */  
+    font-weight: bold; /* Жирный шрифт */  
+    margin-top: auto; /* Выравнивание внизу списка */  
+} 
+
+.view-all {  
+    display: block;  
+    color: #4caf50;  
+    text-align: center;  
+    margin-top: 15px;  
+    text-decoration: none;  
+    font-weight: bold;  
+}
+.video-container {  
+    margin-top: 20px;  
+    width: 100%; /* Занимает всю ширину родительского контейнера */  
+}  
+
+.video-container video {  
+    width: 100%; /* Занимает всю ширину контейнера */  
+    height: 300px; /* Увеличьте высоту видео по желанию */  
+    object-fit: cover; /* Обеспечивает правильное масштабирование */  
+    border: none;  /* Удаляем рамку */  
+}  
+.menu {  
+    background-color: white; /* Фон меню */  
+    padding: 10px 0; /* Внешние отступы */  
+    text-align: center; /* Выравнивание по центру */  
+}  
+
+.menu ul {  
+    list-style: none; /* Убираем маркеры списка */  
+    padding: 0; /* Убираем внутренние отступы */  
+    margin: 0; /* Убираем внешние отступы */  
+    display: inline-flex; /* Используем флекс для горизонтального расположения */  
+}  
+
+.menu li {  
+    margin: 0 20px; /* Расстояние между кнопками */  
+}  
+
+.menu a {  
+    text-decoration: none; /* Убираем подчеркивание */  
+    color: #333; /* Цвет текста */  
+    font-weight: 500; /* Жирное начертание текста */  
+    transition: color 0.3s; /* Плавный переход цвета */  
+}  
+
+.menu a:hover {  
+    color: #4caf50; /* Цвет текста при наведении */  
+}
+.menu {  
+    background-color: #006600; /* Цвет фона меню */  
+    padding: 10px 0; /* Внешние отступы */  
+    text-align: center; /* Выравнивание по центру */  
+}  
+
+.menu ul {  
+    list-style: none; /* Убираем маркеры списка */  
+    padding: 0; /* Убираем внутренние отступы */  
+    margin: 0; /* Убираем внешние отступы */  
+    display: inline-flex; /* Используем флекс для горизонтального расположения */  
+}  
+
+.menu li {  
+    margin: 0 20px; /* Расстояние между кнопками */  
+    position: relative; /* Позиционирование для вложенного меню */  
+}  
+
+.menu a {  
+    text-decoration: none; /* Убираем подчеркивание */  
+    color: white; /* Цвет текста для ссылок */  
+    font-weight: 500; /* Жирное начертание текста */  
+    transition: color 0.3s; /* Плавный переход цвета */  
+}  
+
+.menu a:hover {  
+    color: #99ff99; /* Цвет текста при наведении */  
+}  
+
+  
+
+.menu .dropdown {  
+    display: none; /* Скрываем подменю по умолчанию */  
+    position: absolute; /* Абсолютное позиционирование */  
+    background-color: #ffffff; /* Светло-зеленый цвет фона выпадающего меню */  
+    padding: 15px; /* Увеличиваем внутренние отступы */  
+    border-radius: 5px; /* Закругленные углы */  
+    z-index: 1000; /* Поверх других элементов */  
+    white-space: nowrap; /* Запрещаем перенос строк */  
+    min-width: 150px; /* Минимальная ширина плашки */  
+    opacity: 0; /* Начальная непрозрачность */  
+    pointer-events: none; /* Избегаем взаимодействия, пока меню не отображается */  
+    transition: opacity 1s ease; /* Плавное появление */  
+}  
+
+.menu li:hover .dropdown {  
+    display: block; /* Показываем подменю при наведении на родительский элемент */  
+    opacity: 1; /* Полная видимость */  
+    pointer-events: auto; /* Позволяем взаимодействие с подменю */  
+}  
+.dropdown li {  
+    margin: 5px 0; /* Расстояние между элементами подменю */  
+}  
+
+.dropdown a {  
+    color: #004d00; /* Темно-зеленый цвет текста для ссылок в подменю */  
+    text-align: left; /* Выравнивание текста влево */  
+    display: block; /* Делаем ссылку блочным элементом для улучшенного выравнивания */  
+    padding: 5px 10px; /* Отступы внутри ссылок */  
+}  
+
+.dropdown a:hover {  
+    color: #003300; /* Темно-зеленый цвет при наведении в подменю */  
+}
+.arrow {  
+    font-size: 0.8em; /* Размер стрелочки */  
+    margin-right: 5px; /* Отступ слева от текста */  
+    transition: transform 0.3s; /* Плавный переход для анимации */  
+}  
+
+.menu li:hover .arrow {  
+    transform: rotate(90deg); /* Переворот стрелочки при наведении */  
+}    
+.photo-materials {  
+    flex: 1; /* Занимает оставшееся пространство */  
+    background-color: #006600; /* Зеленый цвет для фона */  
+    border-radius: 8px; /* Закругленные углы */  
+    padding: 15px; /* Отступы внутри блока */  
+    color: white; /* Цвет текста */  
+    margin-left: 20px; /* Отступ слева от новостей */  
+}  
+
+.photo-materials h2 {  
+    text-align: center; /* Центрирование заголовка */  
+    margin-bottom: 20px; /* Отступ ниже заголовка */  
+}  
+
+.featured-photo {  
+    position: relative; /* Для позиционирования текста на изображении */  
+}  
+
+.featured-photo img {  
+    width: 100%; /* Полная ширина блока */  
+    border-radius: 8px; /* Закругленные углы изображения */  
+}  
+
+.photo-info {  
+    position: absolute; /* Абсолютное позиционирование */  
+    bottom: 10px; /* Отступ снизу */  
+    left: 10px; /* Отступ слева */  
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */  
+    padding: 10px; /* Внутренние отступы */  
+    border-radius: 5px; /* Закругленные углы текста */  
+}  
+
+.photo-info h3 {  
+    margin: 0; /* Убираем отступы у заголовка */  
+}  
+
+.view-archive {  
+    color: #66cc66; /* Цвет ссылки */  
+    text-decoration: none; /* Убираем подчеркивание */  
+    font-weight: bold; /* Жирный текст */  
+}  
+
+.view-archive:hover {  
+    text-decoration: underline; /* Подчеркивание при наведении */  
+}
+.content {  
+    display: flex; /* Используем флекс для расположения новостей и фотоматериалов рядом */  
+    gap: 20px; /* Отступ между секциями */  
+}  
+
+.news {  
+    flex: 3; /* Занимает большую часть пространства */  
+}  
+
+.photo-materials {  
+    flex: 1; /* Занимает меньшее пространство */  
+    background-color: #f4f4f4; /* Зеленый цвет для фона */  
+    border-radius: 8px; /* Закругленные углы */  
+    padding: 15px; /* Отступы внутри блока */  
+    color: rgb(0, 0, 0); /* Цвет текста */  
+}  
+
+.photo-materials h2 {  
+    text-align: center; /* Центрирование заголовка */  
+    margin-bottom: 20px; /* Отступ ниже заголовка */  
+}  
+
+.featured-photo {  
+    position: relative; /* Для позиционирования текста на изображении */  
+}  
+
+.featured-photo img {  
+    width: 100%; /* Полная ширина блока */  
+    border-radius: 8px; /* Закругленные углы изображения */  
+}  
+
+.photo-info {  
+    position: absolute; /* Абсолютное позиционирование */  
+    bottom: 10px; /* Отступ снизу */  
+    left: 10px; /* Отступ слева */  
+    background-color: rgba(52, 255, 69, 0.5); /* Полупрозрачный фон для текста */  
+    padding: 10px; /* Внутренние отступы */  
+    border-radius: 5px; /* Закругленные углы текста */  
+}  
+
+.photo-info h3 {  
+    margin: 0; /* Убираем отступы у заголовка */  
+}  
+
+.view-archive {  
+    color: #000000; /* Цвет ссылки */  
+    text-decoration: none; /* Убираем подчеркивание */  
+    font-weight: bold; /* Жирный текст */  
+}  
+
+.view-archive:hover {  
+    text-decoration: underline; /* Подчеркивание при наведении */  
+}  
+
+/* Остальные стили для .news остаются без изменений */ 

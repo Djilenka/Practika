@@ -1,0 +1,155 @@
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f0f0f0; /* Цвет фона страницы */  
+    color: #333; /* Цвет текста */  
+    margin: 0;  
+    display: flex;  
+    flex-direction: column;  
+    min-height: 100vh; /* Минимальная высота для заполнения экрана */  
+}  
+
+header {  
+    background-color: #005500; /* Цвет фона заголовка */  
+    color: white; /* Цвет текста заголовка */  
+    text-align: center; /* Центрирование текста */  
+    padding: 20px; /* Отступы */  
+}  
+
+h1 {  
+    margin: 0; /* Убираем отступ */  
+    font-size: 36px; /* Размер заголовка */  
+}  
+
+main {  
+    padding: 20px; /* Отступы внутри основного содержимого */  
+    flex: 1; /* Занимает все оставшееся пространство */  
+}  
+
+.gallery {  
+    display: grid; /* Сетка для галереи */  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоматическое заполнение */  
+    gap: 15px; /* Промежутки между изображениями */  
+}  
+
+figure {  
+    margin: 0; /* Убираем отступы вокруг фигур */  
+}  
+
+img {  
+    width: 100%; /* Заполнение ширины родителя */  
+    height: auto; /* Соответствующая высота для сохранения пропорций */  
+    border-radius: 8px; /* Закругление углов изображений */  
+}  
+
+figcaption {  
+    text-align: center; /* Центрирование текста подписи */  
+    margin-top: 5px; /* Отступ сверху для разделения */  
+    font-weight: bold; /* Полужирный шрифт для подписей */  
+}  
+
+footer {  
+    text-align: center; /* Центрирование текста внизу */  
+    padding: 10px; /* Отступ */  
+    background-color: #005500; /* Цвет фона подвала */  
+    color: white; /* Цвет текста в подвале */  
+}
+.menu {  
+    background-color: white; /* Фон меню */  
+    padding: 10px 0; /* Внешние отступы */  
+    text-align: center; /* Выравнивание по центру */  
+}  
+
+.menu ul {  
+    list-style: none; /* Убираем маркеры списка */  
+    padding: 0; /* Убираем внутренние отступы */  
+    margin: 0; /* Убираем внешние отступы */  
+    display: inline-flex; /* Используем флекс для горизонтального расположения */  
+}  
+
+.menu li {  
+    margin: 0 20px; /* Расстояние между кнопками */  
+}  
+
+.menu a {  
+    text-decoration: none; /* Убираем подчеркивание */  
+    color: #333; /* Цвет текста */  
+    font-weight: 500; /* Жирное начертание текста */  
+    transition: color 0.3s; /* Плавный переход цвета */  
+}  
+
+.menu a:hover {  
+    color: #4caf50; /* Цвет текста при наведении */  
+}
+.menu {  
+    background-color: #006600; /* Цвет фона меню */  
+    padding: 10px 0; /* Внешние отступы */  
+    text-align: center; /* Выравнивание по центру */  
+}  
+
+.menu ul {  
+    list-style: none; /* Убираем маркеры списка */  
+    padding: 0; /* Убираем внутренние отступы */  
+    margin: 0; /* Убираем внешние отступы */  
+    display: inline-flex; /* Используем флекс для горизонтального расположения */  
+}  
+
+.menu li {  
+    margin: 0 20px; /* Расстояние между кнопками */  
+    position: relative; /* Позиционирование для вложенного меню */  
+}  
+
+.menu a {  
+    text-decoration: none; /* Убираем подчеркивание */  
+    color: white; /* Цвет текста для ссылок */  
+    font-weight: 500; /* Жирное начертание текста */  
+    transition: color 0.3s; /* Плавный переход цвета */  
+}  
+
+.menu a:hover {  
+    color: #99ff99; /* Цвет текста при наведении */  
+}  
+
+  
+
+.menu .dropdown {  
+    display: none; /* Скрываем подменю по умолчанию */  
+    position: absolute; /* Абсолютное позиционирование */  
+    background-color: #ffffff; /* Светло-зеленый цвет фона выпадающего меню */  
+    padding: 15px; /* Увеличиваем внутренние отступы */  
+    border-radius: 5px; /* Закругленные углы */  
+    z-index: 1000; /* Поверх других элементов */  
+    white-space: nowrap; /* Запрещаем перенос строк */  
+    min-width: 150px; /* Минимальная ширина плашки */  
+    opacity: 0; /* Начальная непрозрачность */  
+    pointer-events: none; /* Избегаем взаимодействия, пока меню не отображается */  
+    transition: opacity 1s ease; /* Плавное появление */  
+}  
+
+.menu li:hover .dropdown {  
+    display: block; /* Показываем подменю при наведении на родительский элемент */  
+    opacity: 1; /* Полная видимость */  
+    pointer-events: auto; /* Позволяем взаимодействие с подменю */  
+}  
+.dropdown li {  
+    margin: 5px 0; /* Расстояние между элементами подменю */  
+}  
+
+.dropdown a {  
+    color: #004d00; /* Темно-зеленый цвет текста для ссылок в подменю */  
+    text-align: left; /* Выравнивание текста влево */  
+    display: block; /* Делаем ссылку блочным элементом для улучшенного выравнивания */  
+    padding: 5px 10px; /* Отступы внутри ссылок */  
+}  
+
+.dropdown a:hover {  
+    color: #003300; /* Темно-зеленый цвет при наведении в подменю */  
+}
+.arrow {  
+    font-size: 0.8em; /* Размер стрелочки */  
+    margin-right: 5px; /* Отступ слева от текста */  
+    transition: transform 0.3s; /* Плавный переход для анимации */  
+}  
+
+.menu li:hover .arrow {  
+    transform: rotate(90deg); /* Переворот стрелочки при наведении */  
+} 
